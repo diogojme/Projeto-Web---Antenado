@@ -4,7 +4,7 @@
         <title>Antenado</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-
+        <link rel="stylesheet" href="hover.css">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -87,17 +87,62 @@
         </style>
     </head>
     <body>
-      <nav class="blue darken-1">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo" style="margin-left: 15px">Antenado</a>
-        </div>
-      </nav>
-        <div class="container" style="margin-top: 40px">
+    <header>
+        <nav class="blue darken-1">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo" style="margin-left: 15px">Antenado</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div style="margin-top: 40px; margin-left: 30px;">
             <div class="row">
-                <div class="col s12">
-                    <div id='gmap_canvas' style='height: 100%; width:100%;'></div>
+                <div class="col s5">
+                    <ul class="collapsible collapsible-accordion hoverable"  data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header hvr-bounce-to-right" ><h5 style="size: 40px">O quê é o Antenado?</h5></div>
+                            <div class="collapsible-body"><p>O Antenado é um serviço de utilidade pública, onde é possível consultar situações de risco de segurança em determinada região, além de reportar situações que você vivenciou ou testemunhou.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header hvr-bounce-to-right"><h5>O quê representa um ponto no mapa?</h5></div>
+                            <div class="collapsible-body"><p>Um ponto no mapa representa a localização de uma situação de risco reportada. Situações de risco podem ser desde a ocorrência de um crime, até a observação de uma atitude suspeita.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header hvr-bounce-to-right"><h5>Como posso reportar uma situação de risco?</h5></div>
+                            <div class="collapsible-body"><p>Para reportar uma situação de risco, basta clicar em um ponto no mapa ao lado referente a localização da situação que se quer reportar, e preencher as informações relevantes.</p></div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col s7">
+                    <div id='gmap_canvas' style='height: 80%; width:90%;'></div>
                 </div>
             </div>
         </div>
+    </main>
+
+    <footer class="page-footer" style="background-color: dodgerblue">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Antenado</h5>
+                    <p class="grey-text text-lighten-4">Desenvolvido por alunos de Engenharia de Software da Universidade Federal de Goiás</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Outros plataformas</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Antenado para Android</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Antenado para iOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Todos os direitos reservados para Universidade Federal de Goiás
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
